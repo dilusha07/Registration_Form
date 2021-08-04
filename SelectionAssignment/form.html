@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/validation.js"></script>
+</head>
+
+
+<body>
+
+<center><h2><b>Enter User Informations</b></h2></center>
+  <div class="bgimg">
+    <div class="container">
+      <form action="/action_page.php" name='registration' onSubmit="return formValidation();">
+      
+        <div class="row">
+          <div class="col">
+            
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Type first name here" required="required">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Type last name here" required="required">
+            <label for="cnumber">Contact Number</label>
+            <input type="text" id="cnumber" name="contactnumber" placeholder="Type contact number here" required="required">
+            <label>Address</label>
+			<textarea placeholder="Type user Adress here" cols="22" rows="5" required="required"></textarea>
+        
+          </div><!-- col -->
+
+          <div class="col">
+           
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Type email address here" required="required">
+            <label>User Type</label>
+            <input type="radio" id="school" name="school" value="School">School
+			      <input type="radio" id="university" name="university" value="University">University
+			      <input type="radio" id="employee" name="employee" value="Employee">Employee
+			   <br><br><br>
+				<label for="payment">Payment Type</label>
+				<select id="payment" required="required">
+					<option value="full">Full Payment</option>
+					<option value="half">Half Payment</option>
+				</select>
+         </div> 
+        </div><!-- col -->
+        <center>
+        <input type="submit" value="SUBMIT" class="btn"  >
+    </center>
+      </form>
+    </div><!-- row -->
+  </div><!-- container --> 
+</div><!-- bgimg -->
+
+
+
+</body>
+</html>
